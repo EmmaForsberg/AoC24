@@ -1,16 +1,12 @@
 ﻿using Aoc24;
-using AoC24.Day1;
+using Aoc24.Day_2;
 
-string filePath = "Day1/Day1.txt";
+string filePath = "Day 2/Day2.txt";
 var fileReader = new FileReader(filePath);
 var lines = fileReader.ReadLines();
 
-var solver = new Day1Solver();
+var solver = new Day2Solver();
 solver.ReadLines(lines);
 
-var x = solver.PartOne();
-Console.WriteLine("Answer day 1: {0} ", x);
 
-var parttworesult = solver.PartTwo();
-Console.WriteLine("Answer day 2: {0} ", parttworesult);
 Console.ReadLine();
